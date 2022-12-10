@@ -506,7 +506,7 @@
                   </form>
                   <?php
                   if (isset($_POST["contactmessage"])) {
-                      $retour = mail("bassembenmehdi@gmail.com", "Nouveau message de la part de " . $_POST["contactnom"], $_POST["contactmessage"], "From:formulaire@chipsell.fr\r\nReply-to:" . $_POST["contactmail"]);
+                      $retour = mail("contact@chipsell.fr", "Nouveau message de la part de " . $_POST["contactnom"], $_POST["contactmessage"], "From:formulaire@chipsell.fr\r\nReply-to:" . $_POST["contactmail"]);
                       if ($retour) {
                         echo "<p>L'email a bien été envoyé.</p>";
                       }
